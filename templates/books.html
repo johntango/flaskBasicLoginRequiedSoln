@@ -1,0 +1,12 @@
+{% extends "index.html"%}
+
+{% block content %}
+    <ul>
+    {% for book in books %} 
+        <li>
+            {{book['author']}}	
+            {{book['title']}}
+        </li>	
+    {%endfor%}
+    </ul>
+{% endblock %}
